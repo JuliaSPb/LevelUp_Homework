@@ -1,0 +1,15 @@
+entity = Hall; name = Белый зал; amountOfSeats = 20
+entity = Hall; name = Красный зал; amountOfSeats = 30
+entity = Hall; name = Синий зал; amountOfSeats = 50
+entity = Movie; title = Последний богатырь; duration = 114; description = Иван, обычный парень, по воле случая переносится из современной Москвы в фантастическую страну Белогорье.; actors = Виктор Хориняк, Мила Сивацкая, Екатерина Вилкова, Елена Яковлева, Константин Лавроненко и др.
+entity = Movie; title = Тор: Рагнарёк; duration = 130; description = Могучий громовержец Тор должен спасти от разрушения не только родной Асгард, но и все девять миров, подвластных высшим богам.; actors = Крис Хемсворт, Том Хиддлстон, Кейт Бланшетт, Идрис Эльба, Тесса Томпсон, Карл Урбан и др.
+entity = Movie; title = Лига справедливости; duration = 110; description = Брюс Уэйн, Бэтмен и Чудо-женщина быстро набирают команду сверхлюдей для борьбы с пробудившейся угрозой.; actors = Бен Аффлек, Генри Кэвилл, Эми Адамс, Галь Гадот, Эзра Миллер, Джейсон Момоа и др.
+entity = Session; movie = Последний богатырь; hall = Белый зал; startTime = 10:00; price = 200
+entity = Session; movie = Тор: Рагнарёк; hall = Красный зал; startTime = 12:00; price = 250
+entity = Session; movie = Тор: Рагнарёк; hall = Синий зал; startTime = 16:00; price = 300
+entity = Session; movie = Лига справедливости; hall = Белый зал; startTime = 12:30; price = 250
+entity = Session; movie = Лига справедливости; hall = Красный зал; startTime = 16:30; price = 300
+entity = Session; movie = Лига справедливости; hall = Синий зал; startTime = 18:30; price = 300
+entity = Food; name = Поп-корн сладкий; price = 150; amount = 50
+entity = Food; name = Поп-корн солёный; price = 150; amount = 50
+entity = Food; name = Кока-кола; price = 100; amount = 100
