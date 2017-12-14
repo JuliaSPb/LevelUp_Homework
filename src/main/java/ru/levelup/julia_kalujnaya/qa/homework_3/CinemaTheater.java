@@ -3,9 +3,7 @@ package ru.levelup.julia_kalujnaya.qa.homework_3;
 import ru.levelup.julia_kalujnaya.qa.homework_3.entities.*;
 
 import java.io.IOException;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
+import java.util.*;
 
 /**
  * Домашнее задание. Часть 3
@@ -17,7 +15,7 @@ import java.util.List;
 public class CinemaTheater {
     private ConsoleHelper consoleHelper;
     private FileHelper fileHelper;
-    private List<Hall> halls;
+    private Map<String, Hall> halls;
     private List<Movie> movies;
     private List<Food> foods;
 
@@ -30,7 +28,7 @@ public class CinemaTheater {
     private CinemaTheater() {
         consoleHelper = new ConsoleHelper();
         fileHelper = new FileHelper();
-        halls = new ArrayList<>();
+        halls = new HashMap<>();
         movies = new ArrayList<>();
         foods = new ArrayList<>();
     }
@@ -53,7 +51,7 @@ public class CinemaTheater {
                                     break;
                 }
             }
-        } catch (IOException | NullPointerException | IllegalArgumentException e) {
+        } catch (IOException | NullPointerException | NoSuchElementException e) {
             consoleHelper.printlnToConsole("Не удалось загрузить данные из файла.");
             System.exit(1);
         }
@@ -64,7 +62,7 @@ public class CinemaTheater {
      * @param data - информация для создания объекта в виде пар "свойство - значение"
      */
     private void createHall(HashMap<String, String> data) {
-        halls.add(new Hall(data.get("name"), Integer.parseInt(data.get("amountOfSeats"))));
+        halls.put(data.get("name"), new Hall(data.get("name"), Integer.parseInt(data.get("amountOfSeats"))));
     }
 
     /**
@@ -85,7 +83,7 @@ public class CinemaTheater {
         if ((hall != null) && (movie != null)) {
             movie.addSession(new Session(movie, hall, data.get("startTime"), Integer.parseInt(data.get("price"))));
         } else {
-            throw new IllegalArgumentException();
+            throw new NoSuchElementException();
         }
     }
 
@@ -95,12 +93,7 @@ public class CinemaTheater {
      * @return Возвращает найденный зал, если он существует
      */
     private Hall hallExists(String name) {
-        for (Hall hall: halls) {
-            if (hall.getName().equals(name)) {
-                return hall;
-            }
-        }
-        return null;
+        return halls.get(name);
     }
 
     /**
