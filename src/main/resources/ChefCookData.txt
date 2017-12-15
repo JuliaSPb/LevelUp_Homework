@@ -1,0 +1,76 @@
+entity = Product; type = Cereals; name = греча; protein = 12.6; fat = 3.3; carbohydrate = 62.1
+entity = Product; type = Cereals; name = макароны; protein = 10.4; fat = 1.1; carbohydrate = 69.7
+entity = Product; type = Cereals; name = рис; protein = 6.7; fat = 0.7; carbohydrate = 78.9
+entity = Product; type = Dressing; name = майонез; protein = 0.4; fat = 67; carbohydrate = 2.1
+entity = Product; type = Dressing; name = подсолнечное масло; protein = 0; fat = 99.7; carbohydrate = 0
+entity = Product; type = Dressing; name = сметана; protein = 2.6; fat = 15; carbohydrate = 3.0
+entity = Product; type = Egg; name = куриное яйцо; protein = 12.7; fat = 10.9; carbohydrate = 0.7
+entity = Product; type = Meat; name = говядина; protein = 18.9; fat = 12.4; carbohydrate = 0
+entity = Product; type = Meat; name = куриная грудка; protein = 23.6; fat = 1.9; carbohydrate = 0.4
+entity = Product; type = Meat; name = свинина; protein = 16; fat = 21.6; carbohydrate = 0
+entity = Product; type = Vegetable; name = болгарский перец; protein = 1.3; fat = 0.0; carbohydrate = 5.3
+entity = Product; type = Vegetable; name = зелёный горошек; protein = 5.5; fat = 0.7; carbohydrate = 7.4
+entity = Product; type = Vegetable; name = капуста; protein = 1.8; fat = 0.1; carbohydrate = 4.7
+entity = Product; type = Vegetable; name = картофель; protein = 2.0; fat = 0.4; carbohydrate = 16.1
+entity = Product; type = Vegetable; name = лук репчатый; protein = 1.4; fat = 0.0; carbohydrate = 10.4
+entity = Product; type = Vegetable; name = морковь; protein = 1.3; fat = 0.1; carbohydrate = 6.9
+entity = Product; type = Vegetable; name = огурец; protein = 0.8; fat = 0.1; carbohydrate = 2.8
+entity = Product; type = Vegetable; name = огурцы консервированные; protein = 2.8; fat = 0.0; carbohydrate = 1.3
+entity = Product; type = Vegetable; name = помидор; protein = 1.1; fat = 0.2; carbohydrate = 3.7
+entity = Product; type = Vegetable; name = свёкла; protein = 1.5; fat = 0.1; carbohydrate = 8.8
+entity = Product; type = Vegetable; name = укроп; protein = 2.5; fat = 0.5; carbohydrate = 6.3
+entity = Recipe; type = Salad; name = винегрет
+entity = Recipe; type = Salad; name = салат из свежих овощей
+entity = Recipe; type = Salad; name = оливье
+entity = Recipe; type = Soup; name = борщ
+entity = Recipe; type = Soup; name = куриная лапша
+entity = Recipe; type = Soup; name = щи
+entity = Recipe; type = MainCourse; name = беф-строганов с гречей
+entity = Recipe; type = MainCourse; name = куриные котлеты с рисом
+entity = Recipe; type = MainCourse; name = свинина по-французски с картофелем
+entity = Ingredient; recipe = винегрет; product = свёкла; weight = 400
+entity = Ingredient; recipe = винегрет; product = морковь; weight = 300
+entity = Ingredient; recipe = винегрет; product = картофель; weight = 400
+entity = Ingredient; recipe = винегрет; product = огурцы консервированные; weight = 200
+entity = Ingredient; recipe = винегрет; product = лук репчатый; weight = 150
+entity = Ingredient; recipe = винегрет; product = подсолнечное масло; weight = 30
+entity = Ingredient; recipe = салат из свежих овощей; product = огурец; weight = 300
+entity = Ingredient; recipe = салат из свежих овощей; product = помидор; weight = 300
+entity = Ingredient; recipe = салат из свежих овощей; product = болгарский перец; weight = 250
+entity = Ingredient; recipe = салат из свежих овощей; product = укроп; weight = 30
+entity = Ingredient; recipe = салат из свежих овощей; product = подсолнечное масло; weight = 30
+entity = Ingredient; recipe = оливье; product = картофель; weight = 350
+entity = Ingredient; recipe = оливье; product = морковь; weight = 200
+entity = Ingredient; recipe = оливье; product = куриное яйцо; weight = 180
+entity = Ingredient; recipe = оливье; product = лук репчатый; weight = 150
+entity = Ingredient; recipe = оливье; product = куриная грудка; weight = 300
+entity = Ingredient; recipe = оливье; product = огурцы консервированные; weight = 150
+entity = Ingredient; recipe = оливье; product = зелёный горошек; weight = 300
+entity = Ingredient; recipe = оливье; product = майонез; weight = 150
+entity = Ingredient; recipe = борщ; product = говядина; weight = 800
+entity = Ingredient; recipe = борщ; product = картофель; weight = 500
+entity = Ingredient; recipe = борщ; product = свёкла; weight = 400
+entity = Ingredient; recipe = борщ; product = капуста; weight = 300
+entity = Ingredient; recipe = борщ; product = морковь; weight = 200
+entity = Ingredient; recipe = борщ; product = лук репчатый; weight = 200
+entity = Ingredient; recipe = куриная лапша; product = куриная грудка; weight = 800
+entity = Ingredient; recipe = куриная лапша; product = макароны; weight = 250
+entity = Ingredient; recipe = куриная лапша; product = картофель; weight = 300
+entity = Ingredient; recipe = куриная лапша; product = морковь; weight = 250
+entity = Ingredient; recipe = куриная лапша; product = лук репчатый; weight = 150
+entity = Ingredient; recipe = щи; product = говядина; weight = 700
+entity = Ingredient; recipe = щи; product = капуста; weight = 500
+entity = Ingredient; recipe = щи; product = картофель; weight = 500
+entity = Ingredient; recipe = щи; product = морковь; weight = 250
+entity = Ingredient; recipe = щи; product = лук репчатый; weight = 200
+entity = Ingredient; recipe = беф-строганов с гречей; product = говядина; weight = 700
+entity = Ingredient; recipe = беф-строганов с гречей; product = лук репчатый; weight = 150
+entity = Ingredient; recipe = беф-строганов с гречей; product = сметана; weight = 200
+entity = Ingredient; recipe = беф-строганов с гречей; product = греча; weight = 100
+entity = Ingredient; recipe = куриные котлеты с рисом; product = куриная грудка; weight = 600
+entity = Ingredient; recipe = куриные котлеты с рисом; product = куриное яйцо; weight = 120
+entity = Ingredient; recipe = куриные котлеты с рисом; product = рис; weight = 100
+entity = Ingredient; recipe = свинина по-французски с картофелем; product = свинина; weight = 800
+entity = Ingredient; recipe = свинина по-французски с картофелем; product = лук репчатый; weight = 300
+entity = Ingredient; recipe = свинина по-французски с картофелем; product = майонез; weight = 200
+entity = Ingredient; recipe = свинина по-французски с картофелем; product = картофель; weight = 400
