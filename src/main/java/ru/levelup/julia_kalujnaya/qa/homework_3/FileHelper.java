@@ -12,14 +12,14 @@ import java.util.Scanner;
  *
  * @author Юлия Калюжная
  */
-class FileHelper {
+public class FileHelper {
     /**
      * Считывает текстовый файл построчно и разбивает каждую строку по разделителю ";" на пары "свойство - значение"
      * @param filePath - путь к файлу
      * @return Возвращает список из объектов HashMap, хранящих пары "свойство - значение"
      * @throws IOException - исключение в случае ошибки работы с файлом
      */
-    List<HashMap<String,String>> parseFile(String filePath) throws IOException {
+    public List<HashMap<String,String>> parseFile(String filePath) throws IOException {
         try (Scanner scanner = new Scanner(new File(filePath))) {
             List<HashMap<String, String>> data = new ArrayList<>();
             while(scanner.hasNextLine()){

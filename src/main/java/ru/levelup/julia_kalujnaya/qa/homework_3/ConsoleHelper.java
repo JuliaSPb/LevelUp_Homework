@@ -7,12 +7,12 @@ import java.util.Scanner;
  *
  * @author Юлия Калюжная
  */
-class ConsoleHelper {
+public class ConsoleHelper {
     /**
      * Выводит сообщение на консоль с переводом строки
      * @param message - выводимое сообщение
      */
-    void printlnToConsole(String message) {
+    public void printlnToConsole(String message) {
         System.out.println(message);
     }
 
@@ -20,7 +20,7 @@ class ConsoleHelper {
      * Выводит сообщение на консоль без перевода строки
      * @param message - выводимое сообщение
      */
-    void printToConsole(String message) {
+    public void printToConsole(String message) {
         System.out.print(message);
     }
 
@@ -30,7 +30,7 @@ class ConsoleHelper {
      * @param maxValue - максимальное допустимое целое число
      * @return Возвращает введённое пользователем целое число
      */
-    int getIntValueFromConsole(int maxValue) {
+    public int getIntValueFromConsole(int maxValue) {
         int value;
         Scanner scanner = new Scanner(System.in);
         while (true) {
