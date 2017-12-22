@@ -81,7 +81,7 @@ public class CinemaTheater {
         Hall hall = hallExists(data.get("hall"));
         Movie movie = movieExists(data.get("movie"));
         if ((hall != null) && (movie != null)) {
-            movie.addSession(new Session(movie, hall, data.get("startTime"), Integer.parseInt(data.get("price"))));
+            movie.addSession(new Session(movie, hall, data.get("startTime"), Double.parseDouble(data.get("price"))));
         } else {
             throw new NoSuchElementException();
         }
@@ -115,7 +115,7 @@ public class CinemaTheater {
      * @param data - информация для создания объекта в виде пар "свойство - значение"
      */
     private void createFood(HashMap<String, String> data) {
-        foods.add(new Food(data.get("name"), Integer.parseInt(data.get("price")), Integer.parseInt(data.get("amount"))));
+        foods.add(new Food(data.get("name"), Double.parseDouble(data.get("price")), Integer.parseInt(data.get("amount"))));
     }
 
     /**
