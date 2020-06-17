@@ -61,4 +61,20 @@ class InputOutputHelper {
             }
         }
     }
+
+    /**
+     * Запрос с консоли строки
+     * @param message - сообщение пользователю
+     * @return введённая пользователем строка
+     */
+    String getString(String message) {
+        while (true) {
+            printMessage(message);
+            if (scanner.hasNextLine()) {
+                return scanner.nextLine();
+            } else {
+                scanner.next();
+            }
+        }
+    }
 }
