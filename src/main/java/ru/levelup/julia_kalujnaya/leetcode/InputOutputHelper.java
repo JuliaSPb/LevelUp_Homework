@@ -1,6 +1,7 @@
 package ru.levelup.julia_kalujnaya.leetcode;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Scanner;
 
 /**
@@ -30,6 +31,15 @@ class InputOutputHelper {
      */
     void printMessageAndArray(String message, int[] array) {
         System.out.println(message + ((array != null) ? Arrays.toString(array) : ""));
+    }
+
+    /**
+     * Вывод на консоль сообщения и списка списков целых чисел
+     * @param message - текст сообщения
+     * @param list - список списков целых чисел
+     */
+    void printMessageAndList(String message, List<List<Integer>> list) {
+        System.out.println(message + ((list != null) ? list.toString() : ""));
     }
 
     /**
